@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float principle, roi, year, d, a, i, net_amount;
+    
+    scanf("%f", &principle);
+    scanf("%f", &year);
+    scanf("%f", &roi);
+    
+    i = (principle *year * roi)/100.0;
+    a = (principle + i);
+    d = i * 0.02;
+    net_amount =a -d;
+    printf("%.2f\n%.2f\n%.2f\n%.2f", i, a, d, net_amount);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
