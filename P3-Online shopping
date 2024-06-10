@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int cost1, discount1, ship1;
+     int cost2, discount2, ship2;
+     int cost3, discount3, ship3;
+    int y;
+    
+    scanf("%d",&cost1);
+    scanf("%d",&discount1);
+    scanf("%d",&ship1);
+    scanf("%d",&cost2);
+    scanf("%d",&discount2);
+    scanf("%d",&ship2);
+    scanf("%d",&cost3);
+    scanf("%d",&discount3);
+    scanf("%d",&ship3);
+    
+    int num1 = (cost1 *0.01*discount1)  +ship1;
+    int num2 = (cost2* 0.01*discount2) + ship2;
+    int num3 = (cost3* 0.01*discount3) + ship3 +640;
+    
+   
+if (num1 <= num2) 
+{
+        y= num1;
+        if (num1 <= num3)
+        {
+            y = num1;  
+        } 
+    else
+        {
+            y = num3;
+        }
+    } 
+    else
+    {
+        y = num2;
+        if (num2 <= num3) {
+            y = num2;
+        } else {
+           y = num3;
+        }
+    }
+    
+    printf("In Flipkart: Rs.%d\n", num1);
+    printf("In Snapdeal: Rs.%d\n", num2);
+    printf("In Amazon: Rs.%d\n", num3);
+    
+    if(y==num1)
+    {
+    printf("Choose Flipkart");}
+    else if (y==num2)
+    { printf("Choose Snapdeal");
+    }
+    else 
+    {
+         printf("Choose Amazon");
+    }
+    return 0;
+}
