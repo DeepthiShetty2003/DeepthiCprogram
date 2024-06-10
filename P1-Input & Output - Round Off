@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float num;
+  
+    
+    
+scanf("%f", &num);
+    int int_num = (int)num;
+    int ceiling = ceilf(num);
+    int floor_value = floor(num);
+    printf("%d\n", int_num);
+     printf("%d\n", ceiling);
+printf("%d\n", floor_value);
+
+    return 0;
+}
