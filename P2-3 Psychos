@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float w, x, y, z;
+    scanf("%f",&w);
+     scanf("%f", &x);
+     scanf("%f", &y);
+     scanf("%f", &z);
+    float xm = (y+w)/2;
+      float ym = (z+x)/2;
+    printf("Arun's house is located at(%.1f,%.1f)", xm, ym);
+    
+    
+    
+    return 0;
+}
