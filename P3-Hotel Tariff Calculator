@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int month, rent, days, tariff;
+    scanf("%d", &month);
+    scanf("%d", &rent);
+    scanf("%d", &days);
+    
+    
+    
+    if(month>=1 && month<=12)
+    { 
+        if(month==4||month==5||month==6||month==11||month==12)
+        {
+             tariff = ((rent*0.2)+rent)*days;
+        }
+            else
+                 tariff = (rent*days);
+        
+         printf("%d",tariff);
+    }
+    else
+    printf("Invalid Input");
+        
+    return 0;
+}
