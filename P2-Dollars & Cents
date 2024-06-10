@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int a, b , c, d;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    scanf("%d",&d);
+  int dollar = a + c;
+    int cents =b + d;
+    int div = cents/100;
+    int rem = cents%100;
+    int D = dollar + div;
+    int C = rem;
+    printf("%d\n", D);
+    printf("%d", C);
+    
+        return 0;
+}
