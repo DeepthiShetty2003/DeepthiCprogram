@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+char al;
+    scanf("%c", &al);
+    if(isalpha(al)){
+    if(al== 'a' || al=='e'|| al=='i'|| al=='o'|| al=='u'|| al=='A'|| al=='B'|| al=='C'|| al=='D'|| al=='E'|| al=='U')
+    {
+        printf("Vowel");}
+    else
+    printf("Consonant");
+    }
+    else
+        printf("Not an alphabet");
+    return 0;
+}
