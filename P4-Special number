@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+  int sr, er,i;
+    scanf("%d",&sr);
+    scanf("%d",&er);
+    
+    for(i=sr;i<=er;i++)
+    {
+       int lol= i%10;
+        if(lol==9)
+            printf("%d\n", i);
+        else
+            continue;
+        
+    }
+    return 0;
+}
