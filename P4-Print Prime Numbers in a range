@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>  // For sqrt function
+
+int main() {
+    int n, is_prime;
+
+ 
+    scanf("%d", &n);
+
+    if (n <= 1) {
+    
+        return 1;  // Indicate error (non-positive input)
+    }
+
+   // printf("Prime numbers from 2 to %d are:\n", n);
+
+    // Loop from 2 to the given number
+    for (int num = 2; num <= n; num++) {
+        // Assume the number is prime initially
+        is_prime = 1;
+
+        // Check for divisibility by numbers from 2 to sqrt(num)
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                is_prime = 0;  // Not prime if divisible
+                break;           // Exit the inner loop if not prime
+            }
+        }
+
+        // Print prime number if the flag remains set
+        if (is_prime) {
+            printf("%d ", num);
+        }
+    }
+
+    printf("\n");
+    return 0;
+}
